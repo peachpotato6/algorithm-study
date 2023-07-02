@@ -1,3 +1,5 @@
+
+// replaceAll »ç¿ë
 package array.validated_palindrome;
 
 import java.util.Scanner;
