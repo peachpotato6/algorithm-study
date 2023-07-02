@@ -34,3 +34,6 @@ public class delete_duplicated_word {
     }
     
 }
+
+// indexOf는 문자열에서 해당 문자를 검색할 때 첫번째로 발견되는 index를 리턴
+// str = "goog" -> str.indexOf('g') -> 0
