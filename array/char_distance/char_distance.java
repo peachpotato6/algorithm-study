@@ -11,6 +11,7 @@ public class char_distance {
 
         String[] inputs = input.split(" ");
 
+        // input 분리
         String str = inputs[0];
         char ch = inputs[1].charAt(0);
 
@@ -35,6 +36,7 @@ public class char_distance {
             // 0이 들어있는 배열의 인덱스를 어떻게 추출할까?
         }
         // n = 3
+        // intArr -> ex) 0 1 1 1 0 1 0 1 
 
         // intArr에서 0을 가진 index를 targetIndex에 저장
         int[] targetIndex = new int[n];
@@ -53,9 +55,9 @@ public class char_distance {
 
         for (int i = 0; i < str.length(); i++) {
 
-            int tmp = 100;
+            int tmp = Integer.MAX_VALUE;
 
-            // index 차이 배열로 만들기
+            // index 차이를 배열로 만들기
             for (int j = 0; j < n; j++){
 
                subtractIndex[j] = Math.abs(i-targetIndex[j]);
@@ -65,7 +67,6 @@ public class char_distance {
             //  각 index에 대한 최소값 구하기
             for (int j = 0; j < n; j++){
 
-                
                 while ( tmp > subtractIndex[j]) {
                     tmp = subtractIndex[j];
                 }
@@ -75,9 +76,10 @@ public class char_distance {
             
         }
 
-            for (int x : intArr) {
-            System.out.print(x + " ");
-            }
+        for (int x : intArr) {
+            
+        System.out.print(x + " ");
+        }
 
       
         sc.close();
