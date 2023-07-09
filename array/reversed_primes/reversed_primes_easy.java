@@ -9,7 +9,7 @@ public class reversed_primes_easy {
     public boolean isPrime(int num) {
         // 1은 소수 아님
         if (num == 1) return false;
-        // 1과 자기 자신으로만 나누어지는게 소수니까 다른 숫자로도 나눠지면 소수가 아님
+        // 1과 자기 자신으로만 나눠져서 나머지가 0인 것이 소수니까 다른 숫자로도 나눈게 나머지가 0이면 소수가 아님
         for (int i = 2; i < num; i++) {
             if (num % i == 0) return false;
         }
