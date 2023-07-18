@@ -1,13 +1,21 @@
+# 시간복잡도 O(nlogn)
 def solution(nums, target):
     answer = []
     numlen = len(nums)
+    nums.sort()
 
-    for i in range(numlen):
-        for j in range(i+1, numlen):
-            if nums[i] + nums[j] == target:
-                answer.append(nums[i])
-                answer.append(nums[j])
-                answer.sort()
+    right = numlen - 1
+    left = 0
+
+    while left < right:
+        if nums[left] + nums[right] == target:
+            answer.append(nums[left])
+            answer.append(nums[right])
+            break
+        elif nums[left] + nums[right] > target:
+            right -= 1
+        else:
+            left += 1
 
     return answer
 
