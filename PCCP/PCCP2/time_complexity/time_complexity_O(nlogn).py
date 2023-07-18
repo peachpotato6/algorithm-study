@@ -2,6 +2,8 @@
 def solution(nums, target):
     answer = []
     numlen = len(nums)
+
+    # 먼저 정렬
     nums.sort()
 
     right = numlen - 1
