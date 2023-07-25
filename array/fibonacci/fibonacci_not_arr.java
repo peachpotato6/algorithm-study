@@ -10,7 +10,7 @@ public class fibonacci_not_arr {
         int n = sc.nextInt();
         int a = 1, b = 1, c;
 
-        // 첫번째, 두번째 고정 출력
+
         System.out.print(a + " " + b + " ");
 
         for (int i = 2; i < n; i++) {
