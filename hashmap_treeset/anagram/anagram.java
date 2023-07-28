@@ -1,4 +1,3 @@
-package hashmap_treeset.anagram;
 
 import java.util.*;
 

@@ -1,5 +1,3 @@
-package hashmap_treeset.find_all_anagram;
-
 import java.util.*;
 
 public class find_all_anagram {
