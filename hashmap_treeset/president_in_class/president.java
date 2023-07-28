@@ -1,5 +1,3 @@
-package hashmap_treeset.president_in_class;
-
 import java.util.Scanner;
 import java.util.HashMap;
 
