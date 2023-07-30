@@ -1,4 +1,3 @@
-package stack_queue.correct_parentheses;
 
 import java.util.Scanner;
 
