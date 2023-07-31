@@ -1,6 +1,5 @@
 package array.bigger_one;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class bigger_one {

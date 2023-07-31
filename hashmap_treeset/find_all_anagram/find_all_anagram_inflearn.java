@@ -42,7 +42,7 @@ public class find_all_anagram_inflearn {
         String a = sc.next();
         String b = sc.next();
         System.out.println(T.solution(a,b));
-
+        sc.close();
     }
     
 }
