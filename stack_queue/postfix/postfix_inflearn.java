@@ -1,4 +1,4 @@
-package stack_queue.postfix;
+
 import java.util.*;
 
 public class postfix_inflearn{
