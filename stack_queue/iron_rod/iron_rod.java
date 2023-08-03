@@ -1,5 +1,3 @@
-package stack_queue.iron_rod;
-
 import java.util.*;
 
 public class iron_rod {
