@@ -32,8 +32,7 @@ public class iron_rod {
         Scanner sc = new Scanner(System.in);
         String s = sc.next();
         System.out.println(T.solution(s));
-
-
+        sc.close();
     }
     
 }
