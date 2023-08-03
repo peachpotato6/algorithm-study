@@ -1,12 +1,10 @@
-package stack_queue.rescue_princess;
-
 import java.util.*;
 
 public class rescue_princess {
 
     public int solution (int n, int k) {
 
-        Queue<Integer> Q = new LinkedList();
+        Queue<Integer> Q = new LinkedList<>();
         // 먼저 넣어주고
         for (int i = 1; i <= n; i++) Q.offer(i);
 
@@ -28,11 +26,8 @@ public class rescue_princess {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int k = sc.nextInt();
-        int[] arr = new int[n];
         System.out.println(T.solution(n,k));
         sc.close();
-
-
     }
     
 }
