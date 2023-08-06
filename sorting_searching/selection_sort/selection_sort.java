@@ -2,6 +2,8 @@ package sorting_searching.selection_sort;
 
 import java.util.*;
 
+// 선택 정렬(Selection Sort)은 주어진 리스트에서 최솟값을 찾아 맨 앞에 위치한 값과 교체하고, 
+// 그 다음으로 작은 값을 찾아 두 번째 위치한 값과 교체하는 과정을 반복하여 정렬하는 알고리즘
 public class selection_sort {
 
     public static void main(String args[]) {
