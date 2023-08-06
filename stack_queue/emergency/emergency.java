@@ -1,4 +1,3 @@
-package stack_queue.emergency;
 
 import java.util.*;
 
