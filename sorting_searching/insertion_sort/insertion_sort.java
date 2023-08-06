@@ -1,5 +1,3 @@
-package sorting_searching.insertion_sort;
-
 import java.util.Scanner;
 
     // 삽입 정렬 (Insertion Sort)은 각 원소를 이미 정렬된 부분과 비교하여 적절한 위치에 삽입하는 방법
