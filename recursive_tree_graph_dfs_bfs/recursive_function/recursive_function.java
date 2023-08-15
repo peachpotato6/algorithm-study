@@ -1,7 +1,4 @@
 // 3 입력시 1 2 3 출력
-
-package recursive_tree_graph_dfs_bfs.recursive_function;
-
 import java.util.*;
 
 public class recursive_function {
