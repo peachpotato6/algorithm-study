@@ -1,5 +1,3 @@
-package recursive_tree_graph_dfs_bfs.BFS;
-
 import java.util.*;
 
 // 레벨 탐색 (Queue 사용)
