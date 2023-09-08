@@ -1,4 +1,5 @@
-   
+// 정점 많아질수록 비효율적
+
 // 한번 방문한 노드는 다시 방문하면 안됨
 import java.util.*;
 public class path_finding_adjacency_matrix {
