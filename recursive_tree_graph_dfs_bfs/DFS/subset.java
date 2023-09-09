@@ -36,6 +36,7 @@ public class subset {
         // ch배열의 인덱스 번호가 원소
         ch = new int[n+1];
         T.DFS(1);
+        sc.close();
     }
     
 }
