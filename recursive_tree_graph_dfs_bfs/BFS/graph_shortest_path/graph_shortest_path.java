@@ -1,4 +1,3 @@
-package graph_shortest_path;
 // 최단거리 -> BFS -> Queue -> Node로 Level 탐색
 import java.util.*;
 

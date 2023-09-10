@@ -1,5 +1,3 @@
-package graph_shortest_path;
-
 import java.util.*;
 
 public class graph_shortest_path_array {
