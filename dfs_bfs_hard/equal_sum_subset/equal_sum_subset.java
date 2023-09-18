@@ -1,4 +1,3 @@
-package dfs_bfs_hard.equal_sum_subset;
 import java.util.*;
 public class equal_sum_subset {
 
