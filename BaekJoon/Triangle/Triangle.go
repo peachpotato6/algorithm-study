@@ -14,12 +14,16 @@ func main() {
 	sc := bufio.NewScanner(os.Stdin)
 
 	for {
+		// 다음 라인 읽기
 		sc.Scan()
+		// strings.Trimspace() : 문자열 양쪽 끝에서 공백 문자 제거
+		// sc.Text() : 가장 최근의 라인을 문자열로 반환
 		userInput := strings.TrimSpace(sc.Text())
 		if userInput == "0 0 0" {
 			break
 		}
 
+		// 문자열을 공백 문자로 분리하여 슬라이스(slice)로 반환
 		params := strings.Fields(userInput)
 		if len(params) != 3 {
 			fmt.Println("파라미터는 3개여야 합니다.")

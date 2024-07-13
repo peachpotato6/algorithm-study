@@ -8,6 +8,7 @@ public class Triangle {
         List<int[]> inputs = new ArrayList<>();
         
         while (true) {
+            // 문자열 양 끝 공백문자 제거
             String userInput = sc.nextLine().trim();
             if (userInput.equals("0 0 0")) {
                 break;
