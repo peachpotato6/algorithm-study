@@ -4,7 +4,10 @@
 
 ## [PCCP](PCCP)
 
-## [String](string)
+## [자바(Java) 알고리즘 문제풀이 입문 - 김태원](https://inf.run/LXcN)
+
+
+### [String](string)
 - [문자 찾기](string/find_word)
 - [대소문자 변환](string/case_conversion)
 - [문장 속 단어](string/word_in_sentence)
@@ -20,7 +23,7 @@
 
 </br>
 
-## [Array](array)
+### [Array](array)
 - [큰 수 출력하기](array/bigger_one)
 - [보이는 학생](array/visible_student)
 - [가위 바위 보](array/rock_scissor_paper)
@@ -36,7 +39,7 @@
 
 </br>
 
-## [Two pointers, Sliding window](two_pointers_sliding_window)
+### [Two pointers, Sliding window](two_pointers_sliding_window)
 - [두 배열 합치기](two_pointers_sliding_window/merge_arrays)
 - [공통 원소 구하기](two_pointers_sliding_window/find_common_elements)
 - [최대 매출](two_pointers_sliding_window/maximum_sales)
@@ -46,7 +49,7 @@
 
 </br>
 
-## [HashMap, TreeSet](hashmap_treeset)
+### [HashMap, TreeSet](hashmap_treeset)
 - [학급 회장](hashmap_treeset/president_in_class)
 - [아나그램](hashmap_treeset/anagram)
 - [매출액의 종류](hashmap_treeset/types_of_revenue)
@@ -55,7 +58,7 @@
 
 </br>
 
-## [Stack, Queue](stack_queue)
+### [Stack, Queue](stack_queue)
 - [올바른 괄호](stack_queue/correct_parentheses)
 - [괄호문자 제거](stack_queue/remove_parentheses)
 - [크레인 인형 뽑기](stack_queue/crane_doll_grabber_(kakao))
@@ -66,6 +69,3 @@
 - [응급실](stack_queue/emergency)
 
 </br>
-
-### About
-- [자바(Java) 알고리즘 문제풀이 입문 - 김태원](https://inf.run/LXcN)
