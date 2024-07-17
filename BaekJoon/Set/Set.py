@@ -1,40 +1,37 @@
+# Memory 최적화 버전 -> 입력과 출력 모두 저장X
+
+import sys
+
 def main():
-   m = int(input())
-   
-   # 각 줄의 명령 분리
-   commands = [input().split() for _ in range(m)]
-
-   s = set()
-
-   for cmd in commands:
-      op = cmd[0]
-      if len(cmd) > 1:
-         num = int(cmd[1])
-         
-      if op == "add":
-         s.add(int(num))
-      elif op == "remove":
-         # remove() : 존재하지 않으면 KeyError
-         # discard() : 존재하든 안하든 정상 실행
-         s.discard(int(num))
-      elif op == "check":
-         if int(num) in s:
-            print(1)
-         else:
-            print(0)
-      elif op == "toggle":
-         if int(num) in s:
-            s.remove(int(num))
-         else:
-            s.add(int(num))
-      elif op == "all":
-         s = set(range(1,21))
-      elif op == "empty":
-         s.clear()
     
+    m = int(sys.stdin.readline().strip())
+    s = set()
 
+    for _ in range(m):
+        # 명령어 읽고 바로 처리
+        command = sys.stdin.readline().strip()
 
+        if ' ' in command:
+            op, num_str = command.split()
+            num = int(num_str)
+        else:
+            op = command
 
+        if op == "add":
+            s.add(num)
+        elif op == "remove":
+            s.discard(num)
+        elif op == "check":
+            print('1' if num in s else '0')
+        elif op == "toggle":
+            if num in s:
+                s.remove(num)
+            else:
+                s.add(num)
+        elif op == "all":
+            s = set(range(1, 21))
+        elif op == "empty":
+            s.clear()
 
 if __name__ == "__main__":
    main()
