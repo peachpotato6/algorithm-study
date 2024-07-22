@@ -1,10 +1,8 @@
 // BitMask 이용
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
-import java.util.HashSet;
 
 public class Set {
     public static void main(String args[]) throws Exception {
@@ -25,7 +23,7 @@ public class Set {
 
                 switch(op) {
                     case "add":
-                        // ex) 0001을 num만큼 왼쪽으로 시프트 (num이 3이라면 1000)
+                        // ex) 0001을 num만큼 왼쪽으로 시프트 (num이 3이라면 0100)
                         s = s | (1 << num-1);
                         break;
                     case "remove":
