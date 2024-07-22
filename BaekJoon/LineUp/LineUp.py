@@ -1,3 +1,5 @@
+# Bubble Sort로 안한 거
+# 굳이 이렇게까지?
 import sys
 
 def count_back_steps(test_case):
