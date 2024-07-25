@@ -2,6 +2,7 @@ N = int(input())
 
 people = [list(map(int, input().split())) for _ in range(N)]
 
+
 for i in range(N):
     rank = 1
     for j in range(N):
