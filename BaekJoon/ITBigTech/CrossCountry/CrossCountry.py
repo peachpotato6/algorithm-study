@@ -1,47 +1,55 @@
 T = int(input())
-score_list = dict()
-freq_list = dict()
-five_list = dict()
 
 for _ in range(T):
     N = int(input())
     table = list(map(int, input().split()))
-    # add frequency
-    for i in range(0, len(table)):
-        freq_list[table[i]] = 0
-    for i in range(0, len(table)):
-        freq_list[table[i]] += 1
+
+    team_members = {}
+
+    # 팀별 기록
+    for i, team in enumerate(table):
+        if team not in team_members:
+            team_members[team] = []
+        # 등수
+        team_members[team].append(i+1) 
+
+    # 6명 이상 팀만 필터링
+    valid_teams = {team : ranks for team, ranks in team_members.items() if len(ranks) >= 6}
     
-    # skip below 6
-    for k in freq_list.keys():
-        if freq_list[k] < 6:
-            table[:] = (val for val in table if val != k)
-    for i in range(0, len(table)):
-        score_list[table[i]] = 0
+    # 유효한 팀별 개인 등수 정렬
+    all_ranks = []
+    for team, members in valid_teams.items():
+        all_ranks.extend((pos,team) for pos in members)
+    all_ranks.sort()
 
-    # freqList 초기화해서 4번째 빈도까지 저장하는 리스트로 사용    
-    for i in range(0, len(table)):
-        freq_list[table[i]] = 0
-    
-    # 4번째까지만 더해야함
-    for i in range(0, len(table)):
-        if freq_list[table[i]] < 4:
-            score_list[table[i]] += i+1
-            freq_list[table[i]] += 1
-        # 5번째 five_list에 저장
-        if freq_list[table[i]] == 4:
-            five_list[table[i]] = i+1
-        
-    # winner
-    for items in score_list.items():
-        # 5번째랑 비교해서 5번째 점수가 높은 items[1]을 출력
-        if max(set(score_list.values())) == items[1]:
-            print(max(five_list, key=five_list.get))
-        else:
-            print(max(score_list, key=score_list.get))
+    # 유효한 팀 대상 새로운 순위 및 점수
+    score_list = {}
+    for i, (pos,team) in enumerate(all_ranks):
+        if team not in score_list:
+            score_list[team] = []
+        score_list[team].append(i+1)
 
-print(freq_list.items())
-print(score_list.items())
-print(table)
+    # 상위 4명 점수 및 우승팀
+    min_score = float('inf')
+    winner = -1
+    for team, scores in score_list.items():
+        team_score = sum(scores[:4])
+        if team_score < min_score:
+            min_score = team_score
+            winner = team
+        elif team_score == min_score:
+            # 동점일 경우 5번째 비교
+            if scores[4] < score_list[winner][4]:
+                winner = team
 
-
+    print(winner)
+    # print("score_list")
+    # print(score_list)
+    # print("all_ranks")
+    # print(all_ranks)
+    # print("team_members")
+    # print(team_members)
+    # print("valid teams")
+    # print(valid_teams)
+    # print("min_score")
+    # print(min_score)
