@@ -18,8 +18,9 @@ for _ in range(T):
     
     # 유효한 팀별 개인 등수 정렬
     all_ranks = []
-    for team, members in valid_teams.items():
-        all_ranks.extend((pos,team) for pos in members)
+    for team, ranks in valid_teams.items():
+        # pos 기준으로 sort를 하기 위해 pos를 앞으로
+        all_ranks.extend((pos,team) for pos in ranks)
     all_ranks.sort()
 
     # 유효한 팀 대상 새로운 순위 및 점수
@@ -43,13 +44,3 @@ for _ in range(T):
                 winner = team
 
     print(winner)
-    # print("score_list")
-    # print(score_list)
-    # print("all_ranks")
-    # print(all_ranks)
-    # print("team_members")
-    # print(team_members)
-    # print("valid teams")
-    # print(valid_teams)
-    # print("min_score")
-    # print(min_score)
