@@ -6,7 +6,7 @@
 
 **문제집**
 
-- [ITBigTech](BaekJoon/ITBigTech) **[(출처)](https://www.acmicpc.net/workbook/view/8708)**
+- [ITBigTech](BaekJoon/ITBigTech) 
 
 </br>
 
