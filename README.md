@@ -6,13 +6,13 @@
 
 **문제집**
 
-- [BigTech](ITBigTech) **[(출처)](https://www.acmicpc.net/workbook/view/8708)**
+- [ITBigTech](BaekJoon/ITBigTech) **[(출처)](https://www.acmicpc.net/workbook/view/8708)**
 
 </br>
 
 ## [Python Master Class](PythonMasterClass)
 
-- [Lecture1](Lecture1)
+- [Lecture1](PythonMasterClass/Lecture1)
 
 </br>
 
