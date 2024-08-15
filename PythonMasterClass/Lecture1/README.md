@@ -23,7 +23,7 @@ input().rstrip()
 
 **str.islower(), str.isupper()**
 - str이 모두 소문자인지 대문자인지 판별
-- 
+
 **str.lower(), str.upper()**
 - str을 소문자로, 대문자로 치환
 
