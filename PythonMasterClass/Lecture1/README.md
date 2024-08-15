@@ -36,20 +36,25 @@ input().rstrip()
 
 ## 2. WordFilter
 
+**map(Function, iterable Data)**
+```python3
+N, M = map(int, input().split())
+print(N, M)
+```
 
+**A.find(B)**
+- A 문자열에서 B 문자열이 처음 등장하는 인덱스 추출
 
-
-
-
-
-
-
-
-
+**A.replace(B, '')**
+- A 문자열에서 B 문자열을 ''로 대체 (삭제)
 
 </br>
 
 ---
 
 ## 3. FindBigger
-## 
+
+**eval(A)**
+- A라는 문자열이 수식이라면 수식의 결과를 반환 (우선순위 고려)
+
+</br>
