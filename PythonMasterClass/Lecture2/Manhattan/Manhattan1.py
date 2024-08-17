@@ -1,3 +1,4 @@
+# 3번을 내 생각대로 푼 느낌
 import sys
 input = sys.stdin.readline
 
