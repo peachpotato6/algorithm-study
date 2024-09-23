@@ -1,3 +1,5 @@
+# Lecture1
+
 ## 1. UpperLower
 
 - input
@@ -39,6 +41,9 @@ input().rstrip()
 **map(Function, iterable Data)**
 ```python3
 N, M = map(int, input().split())
+# 여기서 input().split() -> list로 리턴
+# 1 2 3 -> ['1', '2', '3']
+# int 적용해서 [1,2,3]
 print(N, M)
 ```
 
